@@ -1,0 +1,34 @@
+.result_block_wrapper {
+  position: absolute;
+  bottom: -50px;
+  width: 80%;
+  background-color: white;
+  padding: 20px 0;
+  border-radius: 10px;
+  display: flex;
+  z-index: $result-info-index;
+}
+
+.result_block {
+  width: 25%;
+  padding: 0 20px;
+  border-right: 1px solid $border-color;
+}
+
+.result_block:last-child {
+  border-right: none;
+}
+
+.result_block_title {
+  display: block;
+  width: 100%;
+  font-size: $info-title-font-size;
+  margin-bottom: 10px;
+  color: $lighter-main-font-color;
+}
+
+.result_block_info {
+  color: $main-font-color;
+  font-size: 25px;
+  font-weight: 700;
+}

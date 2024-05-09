@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project title</title>
+    <meta name="description" content="Project Description">
+    <link rel="icon" href="/src/img/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/src/scss/app.scss">
+  </head>
+
+  <body>
+    <div class="header_wrapper">
+      <h1 class="header_wrapper_title">По айпи тебя вычислю!!!</h1>
+      <span class="header_wrapper_subtitle">[ IP address checker ]</span>
+
+      <div class="input_wrapper">
+        <input
+          class="header_wrapper_input"
+          id="input_ip"
+          type="text"
+          placeholder="Search for any IP address or domain"
+        >
+        <button class="header_wrapper_button" id="button_ip"><img src="/src/img/icons/icon-arrow.svg" alt=""></button>
+        <div class="input_warning_block" id="input_warning_block">invalid IP address</div>
+        <div id="request_loading"><img src="/src/img/loadingSpinner/loading-white.gif" alt=""></div>
+      </div>
+
+
+
+      <div class="result_block_wrapper">
+        <div class="result_block">
+          <span class="result_block_title">IP Address</span>
+          <span class="result_block_info" id="result_ip">-</span>
+        </div>
+
+        <div class="result_block">
+          <span class="result_block_title">Location</span>
+          <span class="result_block_info" id="result_location">-</span>
+        </div>
+
+        <div class="result_block">
+          <span class="result_block_title">Timezone</span>
+          <span class="result_block_info" id="result_timezone">-</span>
+        </div>
+
+        <div class="result_block">
+          <span class="result_block_title">ISP</span>
+          <span class="result_block_info" id="result_isp">-</span>
+        </div>
+      </div>
+    </div>
+
+
+  
+  <div class="map_wrapper">
+    <div id="map"></div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+.map_wrapper {
+  z-index: $map-index;
+  width: 100%;
+  height: calc(100vh - 270px);
+  overflow: hidden;
+}
+
+#map {
+  z-index: $map-index;
+  width: 100%;
+  height: 100%;
+}

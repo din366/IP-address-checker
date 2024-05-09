@@ -1,0 +1,41 @@
+/* fonts */
+
+$primary-font: Roboto, serif;
+$secondary-font: Montserrat, serif;
+
+$info-title-font-size: 15px;
+
+
+/* fonts media query */
+
+$main-heading-size-m: 30px;
+$main-subtitle-m: 18px;
+$block-heading-size-m: 25px;
+
+$main-heading-size-s: 22px;
+$main-subtitle-s: 15px;
+$block-heading-size-s: 20px;
+$regular-text-s: 15px;
+
+/* colors */
+
+$main-font-color: #313131;
+$lighter-main-font-color: #707070;
+$border-color: #ababab;
+$button-color: #3b3b3b;
+$hover-button-color: #122e8c;
+
+/* z-index */
+
+$map-index: 1;
+$result-info-index: 10;
+$input-index: 15;
+$warning-block-index: 14;
+$request-spinner: 13;
+
+/* global mixins */
+
+@mixin flex-height-center() {
+  display: flex;
+  align-items: center;
+}
