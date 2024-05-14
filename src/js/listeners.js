@@ -2,6 +2,7 @@ import {inputValidation} from "./helpers/inputValidation";
 import {request} from "./requests";
 import {renderTextData} from "./renderRequestData";
 import returnIdBlock from "./helpers/checkIdBlock";
+import L from "leaflet";
 
 let timerId = null;
 const trottlingWarningBlock = (elem, message) => {
@@ -31,6 +32,7 @@ export const activateListeners = (mapObject) => {
       request(input.value).then(res => {
         renderTextData(res);
         mapObject.setView([res.location.lat, res.location.lng], 13) // ? leaflet map object
+        L.marker([res.location.lat, res.location.lng]).addTo(mapObject);
         loadingSpinner.style.right = 0;
       }).catch(err => {
         console.log(err);

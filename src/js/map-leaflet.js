@@ -9,12 +9,12 @@ L.Icon.Default.mergeOptions({
 });
 
 export const leafletInit = () => {
-  const map = L.map('map').setView([53.8584,27.6774], 13);
+  const map = L.map('map').setView([53.8584,27.6774], 2);
 
   // add the OpenStreetMap tiles
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 13,
-    attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+    attribution: '&copy; <a href="https://github.com/din366">Din366</a>'
   }).addTo(map);
 
   return map;
