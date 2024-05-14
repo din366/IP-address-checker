@@ -4,6 +4,7 @@
 src="https://github.com/din366/images/blob/main/readme%20images/ip-address-checker/ip-address-checker.png" alt="project image">
 
 <a href="https://ip-address-checker-lime.vercel.app" style="text-align: center;">Развернутое приложение на Vercel</a>
+:warning: Ругается на адблокеры, для правильной работы желательно отключить :) 
 
 ### Что реализовано:
 <ul>
@@ -13,6 +14,7 @@ src="https://github.com/din366/images/blob/main/readme%20images/ip-address-check
   <li>Использован препроцессор scss</li>
   <li>Для получение данных IP использовался Ipify API</li>
   <li>Для отображения данных об IP на карте использовался Leaflet API</li>
+  <li>Обработка ошибок получения данных с сервера</li>
   <li>Добавлены стили для отображения на мобильных устройствах любого размера</li>
 </ul>
 
